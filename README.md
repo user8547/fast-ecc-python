@@ -31,7 +31,7 @@ $ python
 Available methods:
 - `mul(point, scalar)` - returns point multiplied with a scalar
 - `add(point, point)` - returns addition of two points
-- `inv(point)` - inverts point
+- `inv(point)` - returns inverse of point
 - `valid(point)` - returns 1 if point on curve, 0 otherwise
 - `comress(point)` - returns 33 bytes - sign of Y coordinate (0x02 or 0x03) and X coordinate (32 bytes)
 - `decompress(bytestring33)` - returns unpacked point
