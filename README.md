@@ -29,12 +29,13 @@ $ python
 ```
 
 Available methods:
-- `mul(point, scalar)` - returns point multiplied with scalar
+- `mul(point, scalar)` - returns point multiplied with a scalar
 - `add(point, point)` - returns addition of two points
 - `inv(point)` - inverts point
 - `valid(point)` - returns 1 if point on curve, 0 otherwise
 - `comress(point)` - returns 33 bytes - sign of Y coordinate (0x02 or 0x03) and X coordinate (32 bytes)
 - `decompress(bytestring33)` - returns unpacked point
 
-Point at infinity is represented as value `[Null, Null]` or 33 zero bytes in compressed form.
+Point at infinity is represented as value `[Null, Null]` or 33 zero bytes (in compressed form).
+
 Ed25519 does not have point at infinity. Neutral point is `[0,1]`.
